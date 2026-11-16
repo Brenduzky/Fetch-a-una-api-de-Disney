@@ -70,7 +70,7 @@ function mostrarPersonajes(lista) {
   });
 }
 
-// Agregar personaje nuevo
+
 function aLista(texto) {
   return texto.split(",").map(t => t.trim()).filter(t => t !== "");
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Disney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <input type="search" id="buscador" placeholder="Busque su personaje">
+      <select id="filtroAparece">
+        <option value="">Aparece en (todo)</option>
+        <option value="films">Películas</option>
+        <option value="tvShows">Series</option>
+        <option value="videoGames">Videojuegos</option>
+        <option value="parkAttractions">Atracciones</option>
+      </select>
+      <select id="orden">
+        <option value="asc">Nombre A-Z</option>
+        <option value="desc">Nombre Z-A</option>
+      </select>
+    </header>
+
+    <main class="personaje-container" id="personajeContainer">
+        <!-- Contenido dinámico -->
+    </main>
+
+    <form id="agregarPersonaje">
+      <label for="nombre">Nombre del personaje</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre del personaje" required>
+
+      <label for="imagen">URL de la imagen</label>
+      <input type="text" id="imagen" name="imagen" placeholder="https://...">
+
+      <label for="films">Películas (separadas por coma)</label>
+      <input type="text" id="films" name="films" placeholder="Hercules, Aladdin">
+
+      <label for="tvShows">Series (separadas por coma)</label>
+      <input type="text" id="tvShows" name="tvShows" placeholder="Gravity Falls">
+
+      <label for="videoGames">Videojuegos (separados por coma)</label>
+      <input type="text" id="videoGames" name="videoGames" placeholder="Kingdom Hearts III">
+
+      <button type="submit">Agregar personaje</button>
+    </form>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
